@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Configuration des capteurs</title>
+</head>
+<body>
+<div align="center">
+    <h1>Capteur List</h1>
+    <a href="/new">Create New Capteur</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Adresse_ip</th>
+                <th>Localisation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="capteur : ${listCapteurs}">
+                <td th:text="${capteur.id}">Id</td>
+                <td th:text="${capteur.adresse_ip}">Adresse_ip</td>
+                <td th:text="${capteur.localisation}">Localisation</td>
+                <td>
+                   
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>   
+</body>
+</html>
