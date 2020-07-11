@@ -6,7 +6,7 @@
 <title>Configuration des capteurs</title>
 </head>
 <body>
-<div align="center">
+<<div align="center">
     <h1>Capteur List</h1>
     <a href="/new">Create New Capteur</a>
     <br/><br/>
@@ -16,6 +16,11 @@
                 <th>Id</th>
                 <th>Adresse_ip</th>
                 <th>Localisation</th>
+                <th>Seuil_Co2</th>
+                <th>Seuil_No2</th>
+                <th>Seuil_Pf</th>
+                <th>Seuil_Min_Tmp</th>
+                <th>Seuil_Max_Tmp</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +28,12 @@
                 <td th:text="${capteur.id}">Id</td>
                 <td th:text="${capteur.adresse_ip}">Adresse_ip</td>
                 <td th:text="${capteur.localisation}">Localisation</td>
+                <td th:text="${capteur.seuil_co2}">Seuil_Co2</td>
+                <td th:text="${capteur.seuil_no2}">Seuil_No2</td>
+                <td th:text="${capteur.seuil_pf}">Seuil_Pf</td>
+                <td th:text="${capteur.seuil_min_tmp}">Seuil_Min_Tmp</td>
+                <td th:text="${capteur.seuil_max_tmp}">Seuil_Max_Tmp</td>
+                
                 <td>
                    
                 </td>

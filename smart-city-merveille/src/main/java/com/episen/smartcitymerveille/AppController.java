@@ -31,7 +31,7 @@ public class AppController {
 	     
 	    return "new_capteur";
 	}
-
+	
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String saveCapteur_Polluant(@ModelAttribute("capteur") Capteur capteur) {
 	    service.save(capteur);
